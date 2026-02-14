@@ -1,22 +1,22 @@
 /*styles.css*/
 
 body {
-	background: yellow;
+	background: hsl(47, 88%, 63%);
 }
 
 .container {
-	width: 500px;
-	margin: 50px auto;
+	width: 350px;
+	margin: 20px auto;
 	background: white;
-	padding:20px;
+	padding:15px;
 	border-radius: 10px;
-	/* display: flex; */
-	/* flex-direction: column; */
+	border:1px solid hsl(0, 0%, 7%);
+	box-shadow:  8px 8px 3px hsl(0, 0%, 7%);
 }
 
 img {
 	width: 100%;
-	border-radius:20px;
+	border-radius:10px;
 }
 .image-container {
 	width: 100%;
@@ -27,9 +27,9 @@ img {
 	padding: 10px 20px;
 	border:none;
 	border-radius: 10px;
-	background:yellow;
+	background:hsl(47, 88%, 63%);
 	color:black;
-	font-weight: bold;
+	font-weight: 800;
 	margin:10px 0;
 	cursor: pointer;
 }
@@ -39,12 +39,21 @@ img {
 }
 
 .heading{
-	font-weight: bold;
+	font-weight: 500;
 	font-family: sans-serif;
+	margin-bottom: 0;
+	cursor: pointer;
 }
-
+.heading:hover {
+	color:hsl(47, 88%, 63%);
+	font-weight: 800;
+}
 .content {
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.75;
+	letter-spacing: 0.5px;
+	color: hsl(0, 0%, 42%);
 }
 
 .avatar {
@@ -58,7 +67,10 @@ img {
 	gap:20px;
 }
 .avatar-name {
-	font-weight: bold;
+	font-weight: 800;
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+	font-size: 15px; 
+	text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
